@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body onload="loadContent()">
+
+<nav>Baseball Website</nav>
+
+<div class="container">
+
+<div class="card">
+<div id="isiWeb"></div>
+
+<button onclick="like()">Like ❤️</button>
+<p>Total Like: <span id="likeCount">0</span></p>
+
+<button onclick="navigator.share ? navigator.share({title:'Baseball'}) : alert('Share tidak didukung')">
+Share
+</button>
+
+</div>
+
+<div class="card">
+<h3>Komentar</h3>
+
+<textarea id="comment"></textarea>
+<button onclick="sendComment()">Kirim</button>
+
+<div id="comments"></div>
+
+</div>
+
+</div>
+
+<footer>
+Create by Metha Jingga Almaqvira Wiradimadja
+</footer>
+
+</body>
+</html>
